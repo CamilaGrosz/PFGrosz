@@ -12,9 +12,12 @@ header{
     padding: 10px;
 }
 
-nav{
+.indexNav{
     margin-top: 15px;
+
 }
+
+
 
 nav li{
     display: inline;
@@ -100,15 +103,18 @@ body{
 
 
 .packs{
-    margin-left: 309px;
-    margin-top: 100px;
-    margin-right: 251px;
+    display: flex;
     font-size: 18px;
+    justify-content: center;
+    margin-top: 50px;
 }
 
+
+
 .packImg{
-    padding-left: 292px;
-    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
 }
 
 .packImg img{
@@ -125,12 +131,20 @@ body{
 
 .serviciosSection hr{
     margin-top: 100px;
+    
+}
+
+.serviciosTitle{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 20px;
 }
 
 .map{
-    padding-left: 350px;
-    padding-right: 0%;
-    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 86px;
 }
 
 .ubiTitle{
@@ -145,46 +159,47 @@ body{
     padding-bottom: 52px;
 }
 
+.contactTitle{
+    margin-bottom: 147px;
+}
+
 .contactSection div{
-    display: inline;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.contactRow{
+
 }
 
 .ig{
     width: 23px;
     height: 24px;
-    padding-left: -7px;
-    padding-right: -40px;
+    /* padding-left: -7px;
+    padding-right: -40px; */
+    margin-right: 20px;
 }
 
 .face{
     width: 26px;
     height: 27px;
     display: inline;
-    margin-left: 14px;
+    margin-right: 14px;
 }
 
 .name{
     display: inline;
 }
 
-.contactSection{
-    padding-left: 265px;
-    font-size: 20px;
-    padding-bottom: 20px;
-    padding-top: 87px;
-}
-
-.contactSection p {
-    padding-right: 254px;
-    padding-left: 47px;
-    display: inline-block;
-    margin-bottom: 93px;
-    margin-right: 1px;
-}
 
 .phone{
-    padding-right: 237px !important;
-    display: inline;
+    padding-right: 23px 
+}
+
+.mail{
+    padding-right: 20px;
+    
 }
 
 .imgSection{
@@ -192,10 +207,17 @@ body{
 }
 
 .imgSection img{
-    padding-left: 85px;
+    padding-left: 40px;
     padding-bottom: 50px;
     padding-top: 100px;
-    padding-right: 34px;
+    padding-right: 40px;
+}
+
+.spaImg{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .bigImg img{
@@ -213,13 +235,11 @@ body{
 
 .pool{
     height: 300px;
+    
 }
 
 
-.mail{
-    padding-right: 20px;
-    padding-left: 7px;
-}
+
 
 .logo{
     display: inline !important;
