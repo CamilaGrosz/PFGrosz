@@ -12,6 +12,8 @@ header{
     padding: 10px;
 }
 
+
+
 .changedNav{
     margin-top: 15px;
 
@@ -241,9 +243,6 @@ body{
 
 
 
-.logo{
-    display: inline !important;
-}
 
 hr{
     color: gray;
@@ -255,6 +254,143 @@ hr{
     margin-top: 100px;
 }
 
+@media (max-width: 576px) {
+    .name{
+        font-size: 12px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+        
+    }
+    .navList li{
+        font-size: 12px;
+    }
+    .logo{
+        display: flex;
+    }
+    a{
+        margin-left: 10px;
+    }
+    .indexTitle{
+        font-size: 30px;
+    }
+    .indexImg{
+        width: 420px;
+        height: 287px;
+    }
+    .indexText{
+        margin: 30px;
+        font-size: 14px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .nservicios img{
+        height: 258px;
+    }
+    .packs{
+        margin: 40px;
+        font-size: 16px;
+    }
+    .packImg{
+        flex-wrap: wrap;
+    }
+    .packImg img{
+        padding-right: 0px;
+        padding-bottom: 60px;
+        height: 243px;
+        width: 275px;
+    }
+    .ubiTitle{
+        padding: 0px;
+    }
+    .map{
+        margin: 40px;
+    }
+    .direc{
+        font-size: 15px;
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+    .contactRow{
+        padding: 23px;
+    }
+    .col p{
+        font-size: 14px;
+    }
+    .spaImg{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .pool{
+        height: 320px;
+    }
+    .littlePool{
+        height: 400px;
+    }
+    .seguinos{
+        font-size: 12px;
+    }
+    .seguinosContainer img{
+        width: 22px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 576px){
+    h1{
+        font-size: 35px;
+    }
+    .indexTitle{
+        font-size: 35px;
+    }
+    .indexImg{
+        width: 490px;
+        height: 331px;
+    }
+    .indexText{
+        margin: 35px;
+        font-size: 20px;
+    }
+    .seguinos{
+        font-size: 14px;
+    }
+    .seguinosContainer img{
+        width: 25px;
+    }
+    .packs{
+        margin: 54px;
+        font-size: 17px;
+    }
+    .packImg{
+        display: grid;
+    }
+    .packImg img{
+        padding-right: 0px;
+        padding-bottom: 60px;
+        height: 278px;
+        width: 341px;
+    }
+    .spaImg{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .pool{
+        height: 320px;
+    }
+    .littlePool{
+        height: 400px;
+    }
+    .imgSection img{
+        width: 436px;
+    }
+
+
+}
 
 
 
