@@ -274,6 +274,17 @@ hr{
     a{
         margin-left: 10px;
     }
+    .indexTitle{
+        font-size: 30px;
+    }
+    .indexImg{
+        width: 420px;
+        height: 287px;
+    }
+    .indexText{
+        margin: 30px;
+        font-size: 14px;
+    }
     h1{
         font-size: 30px;
     }
@@ -324,24 +335,59 @@ hr{
     .seguinos{
         font-size: 12px;
     }
-    .indexTitle{
-        font-size: 30px;
-    }
-    .indexImg{
-        width: 420px;
-        height: 287px;
-    }
-    .indexText{
-        margin: 30px;
-        font-size: 14px;
-    }
     .seguinosContainer img{
         width: 22px;
     }
 }
 
-@media (max-width: 576px){
-
+@media (max-width: 768px) and (min-width: 576px){
+    h1{
+        font-size: 35px;
+    }
+    .indexTitle{
+        font-size: 35px;
+    }
+    .indexImg{
+        width: 490px;
+        height: 331px;
+    }
+    .indexText{
+        margin: 35px;
+        font-size: 20px;
+    }
+    .seguinos{
+        font-size: 14px;
+    }
+    .seguinosContainer img{
+        width: 25px;
+    }
+    .packs{
+        margin: 54px;
+        font-size: 17px;
+    }
+    .packImg{
+        display: grid;
+    }
+    .packImg img{
+        padding-right: 0px;
+        padding-bottom: 60px;
+        height: 278px;
+        width: 341px;
+    }
+    .spaImg{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .pool{
+        height: 320px;
+    }
+    .littlePool{
+        height: 400px;
+    }
+    .imgSection img{
+        width: 436px;
+    }
 
 
 }
