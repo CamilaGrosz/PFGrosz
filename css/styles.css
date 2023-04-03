@@ -5,37 +5,22 @@
     height: 40px;
     align-items: center;
   }
-  header .name {
+  header p {
     font-size: 12px;
-  }
-  header .name .logo {
     display: flex;
   }
-  .navList li {
-    font-size: 12px;
+  header nav ul li {
+    font-size: 10px;
   }
-  .navList li a {
+  header nav ul li a {
     margin-left: 10px;
   }
-  h1 {
-    font-size: 30px;
+  main h1 {
+    font-size: 10px;
   }
-  .indexTitle {
-    font-size: 30px;
-  }
-  .indexImg {
-    width: 420px;
-    height: 287px;
-  }
-  .indexText {
+  main .indexText {
     margin: 30px;
-    font-size: 14px;
-  }
-  .seguinosContainer img {
-    width: 22px;
-  }
-  .seguinosContainer img .seguinos {
-    font-size: 12px;
+    font-size: 10px;
   }
   .nservicios img {
     height: 258px;
@@ -53,7 +38,7 @@
     height: 243px;
     width: 275px;
   }
-  .packImg .ubiTitle {
+  .ubiTitle {
     padding: 0px;
   }
   .map {
@@ -70,23 +55,18 @@
   .col p {
     font-size: 14px;
   }
-  .spaImg {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  .imgSection .spaImg {
+    width: 370px;
   }
-  .spaImg .pool {
-    height: 320px;
+  .seguinosContainer img {
+    width: 22px;
   }
-  .spaImg .littlePool {
-    height: 400px;
+  .seguinosContainer img .seguinos {
+    font-size: 12px;
   }
 }
 @media (max-width: 768px) and (min-width: 576px) {
   h1 {
-    font-size: 35px;
-  }
-  .indexTitle {
     font-size: 35px;
   }
   .indexImg {
@@ -116,20 +96,6 @@
     height: 278px;
     width: 341px;
   }
-  .spaImg {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .pool {
-    height: 320px;
-  }
-  .littlePool {
-    height: 400px;
-  }
-  .imgSection img {
-    width: 436px;
-  }
 }
 * {
   margin: 0;
@@ -140,154 +106,154 @@
 
 body {
   font-family: "Source Sans 3";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
 }
-
-header {
+body header {
   display: flex;
   justify-content: space-between;
   height: 60px;
   align-items: center;
   padding: 10px;
 }
-header p {
+body header p {
   display: flex;
 }
-header nav ul {
+body header nav ul {
   display: flex;
   margin: 0%;
 }
-header nav ul li {
+body header nav ul li {
   display: inline;
 }
-header nav ul li a {
+body header nav ul li a {
   text-decoration: none;
   margin-left: 38px;
   color: #606060;
   margin-top: 50px;
 }
-header nav ul li :hover {
+body header nav ul li :hover {
   text-decoration: none;
   color: #666666;
   font-weight: bolder;
 }
-
-main h1 {
+body main h1 {
   color: #606060;
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   padding-top: 30px;
 }
-main .indexTitle {
-  text-align: center;
-  margin: 34px;
-  font-weight: bolder;
-  color: #606060;
-  padding-top: 63px;
-}
-main .indexImg {
+body main .indexImg {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 35px;
+  width: 680px;
+  height: 416px;
 }
-main .indexText {
+body main .indexText {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
 }
-main .nservicios img {
+body main .nservicios img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 35px;
 }
-main .serviciosSection h4 {
+body main .serviciosSection h4 {
   display: flex;
   justify-content: center;
   margin-top: 100px;
   font-size: 20px;
 }
-main .serviciosSection div {
+body main .serviciosSection div {
   display: flex;
   font-size: 18px;
   justify-content: center;
   margin-top: 50px;
 }
-main .serviciosSection .packImg {
+body main .serviciosSection .packImg {
   display: flex;
   justify-content: center;
   margin-top: 70px;
 }
-main .serviciosSection .packImg img {
+body main .serviciosSection .packImg img {
   padding-right: 20px;
   height: 159px;
 }
-main .ubicacion div {
+body main .ubicacion div {
   display: flex;
   justify-content: center;
   margin-top: 86px;
 }
-main .direc {
+body main .direc {
   padding-left: 13px;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 52px;
 }
-main .contactTitle {
+body main .contactTitle {
   margin-bottom: 147px;
 }
-main .contactSection div {
+body main .contactSection div {
   display: flex;
   justify-content: center;
   margin-bottom: 45px;
 }
-main .contactSection .ig {
+body main .contactSection .ig {
   width: 23px;
   height: 24px;
   margin-right: 20px;
 }
-main .contactSection .face {
+body main .contactSection .face {
   width: 26px;
   height: 27px;
   display: inline;
   margin-right: 14px;
 }
-main .imgSection {
+body main .imgSection {
   padding-left: 25px;
 }
-main .imgSection .spaImg {
+body main .imgSection .spaImg {
   width: 1200px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
-main .imgSection h2 {
-  padding-top: 97px;
+body main .imgSection .tratamientos {
+  margin-bottom: 30px;
+}
+body main .imgSection h2 {
+  padding-top: 50px;
   color: #606060;
   padding-bottom: 24px;
   padding-right: 30px;
-  height: -21px;
   text-align: center;
 }
-
-footer {
+body footer {
   display: flex;
-  justify-content: flex-end;
+  height: 50px;
   margin-top: auto;
+  justify-content: flex-end;
 }
-footer .seguinosContainer {
+body footer .seguinosContainer {
   display: flex;
   gap: 20px;
   margin: 20px;
 }
-footer .seguinosContainer p {
+body footer .seguinosContainer p {
   font-weight: bolder;
   color: #666666;
   text-align: end;
 }
-footer .seguinosContainer img {
+body footer .seguinosContainer img {
   width: 29px;
   margin-right: 7px;
   height: fit-content;

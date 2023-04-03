@@ -1,46 +1,39 @@
+@import 'variables.scss';
+
 @media (max-width: 390px) {
     header{
         display: flex;
         justify-content: space-between;
         height: 40px;
         align-items: center;
-        .name{
+        p{
             font-size: 12px;
-            .logo{
-                display: flex;
+            display: flex;
+        }
+        nav{
+            ul{
+                li{
+                    font-size: $smallSize;
+                    a{
+                        margin-left: 10px;
+                    }
+                }
             }
         }
     }
-    .navList {
-        li{
-            font-size: 12px;
-            a{
-                margin-left: 10px;
-            }
+    main{
+        h1{
+            font-size: $smallSize;
         }
-
-    }
-    h1{
-        font-size: 30px;
-    }
-    .indexTitle{
-        font-size: 30px;
-    }
-    .indexImg{
-        width: 420px;
-        height: 287px;
-    }
-    .indexText{
-        margin: 30px;
-        font-size: 14px;
-    }
-
-    .seguinosContainer img{
-        width: 22px;
-        .seguinos{
-            font-size: 12px;
+        // index
+        .indexText{
+            margin: 30px;
+            font-size: $smallSize;
         }
     }
+    
+
+
 
     .nservicios{
         img{
@@ -60,7 +53,6 @@
             width: 275px;
         }
     }
-    .packImg 
     .ubiTitle{
         padding: 0px;
     }
@@ -78,31 +70,28 @@
     .col p{
         font-size: 14px;
     }
-    .spaImg{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        .pool{
-            height: 320px;
+    .imgSection{
+        .spaImg{
+            width: 370px;
         }
-        
-        .littlePool{
-            height: 400px;
-        }   
     }
+    .seguinosContainer img{
+        width: 22px;
+        .seguinos{
+            font-size: 12px;
+        }
+    }
+
 
 
 }
 
 @media (max-width: 576px) and (min-width: 390px){
-    
+
 }
 
 @media (max-width: 768px) and (min-width: 576px){
     h1{
-        font-size: 35px;
-    }
-    .indexTitle{
         font-size: 35px;
     }
     .indexImg{
@@ -135,18 +124,5 @@
         height: 278px;
         width: 341px;
     }
-    .spaImg{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .pool{
-        height: 320px;
-    }
-    .littlePool{
-        height: 400px;
-    }
-    .imgSection img{
-        width: 436px;
-    }
+
 } 
