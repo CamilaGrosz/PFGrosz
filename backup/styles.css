@@ -171,11 +171,15 @@ body{
     margin-bottom: 90px;
 }
 
+.contactRow{
 
+}
 
 .ig{
     width: 23px;
     height: 24px;
+    /* padding-left: -7px;
+    padding-right: -40px; */
     margin-right: 20px;
 }
 
@@ -188,6 +192,16 @@ body{
 
 .name{
     display: inline;
+}
+
+
+.phone{
+    padding-right: 23px 
+}
+
+.mail{
+    padding-right: 20px;
+    
 }
 
 .imgSection{
@@ -375,8 +389,3 @@ hr{
         width: 436px;
     }
 } 
-
-
-
-
-
