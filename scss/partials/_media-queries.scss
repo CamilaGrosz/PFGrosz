@@ -1,128 +1,470 @@
 @import 'variables.scss';
 
 @media (max-width: 390px) {
-    header{
-        display: flex;
-        justify-content: space-between;
-        height: 40px;
-        align-items: center;
-        p{
-            font-size: 12px;
+    body{
+        header{
             display: flex;
-        }
-        nav{
-            ul{
-                li{
-                    font-size: $smallSize;
-                    a{
-                        margin-left: 10px;
+            justify-content: space-between;
+            height: 40px;
+            align-items: center;
+            p{
+                font-size: $smallSize;
+                display: flex;
+            }
+            nav{
+                ul{
+                    li{
+                        font-size: $smallSize;
+                        a{
+                            margin-left: 10px;
+                        }
                     }
                 }
             }
         }
-    }
-    main{
-        h1{
-            font-size: $smallSize;
+        main{
+            h1{
+                font-size: $smallTitle;
+            }
+            // index
+            .indexImg{
+                margin-top: 50px;
+            }
+            .indexText{
+                margin: 30px;
+                font-size: $smallSize;
+            }
+            // Servicios
+            .nservicios{
+                img{
+                    height: 200px;
+                }
+            }
+            .packImg{
+                flex-wrap: wrap;
+                img{
+                    padding-right: 0px;
+                    padding-bottom: 60px;
+                    height: 243px;
+                    width: 275px;
+                }
+            }
+            .serviciosSection{
+                h4{
+                    font-size: $smallSub;
+                }
+                div{
+                    font-size: $smallSize;
+                    width: 260px;
+                    ul{
+                        margin: 19px;
+                        font-size: $smallSize;
+                    }
+                }
+                .packImg{
+                    img{
+                        width: 200px;
+                    }
+                    .picSpa{
+                        width: 200px;
+                    }
+                }
+            }
+            // Ubicacion
+            .ubicacion{
+                div{
+                    width: 200px;
+                }
+            }
+            .direc{
+                font-size: $smallSize;
+            }
+            // Contacto
+            .contactSection{
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 170px;
+                div{
+                    p{
+                        font-size: $smallSize;
+
+                    }
+                }
+            }
+            // Imagenes
+            .imgSection{
+                h2{
+                    font-size: $smallSub;
+                } 
+                .spaImg{
+                    width: 300px;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                }
+            }
+
         }
-        // index
-        .indexText{
-            margin: 30px;
-            font-size: $smallSize;
+        footer{
+            .seguinosContainer{
+                img{
+                    width: 22px;
+                }
+                p{
+                    font-size: $smallSize;
+                }
+            }
         }
     }
+}   
     
-
-
-
-    .nservicios{
-        img{
-            height: 258px;
-        }
-    } 
-    .packs{
-        margin: 40px;
-        font-size: 16px;
-    }
-    .packImg{
-        flex-wrap: wrap;
-        img{
-            padding-right: 0px;
-            padding-bottom: 60px;
-            height: 243px;
-            width: 275px;
-        }
-    }
-    .ubiTitle{
-        padding: 0px;
-    }
-    .map{
-        margin: 40px;
-    }
-    .direc{
-        font-size: 15px;
-        padding: 20px;
-        padding-bottom: 50px;
-    }
-    .contactRow{
-        padding: 23px;
-    }
-    .col p{
-        font-size: 14px;
-    }
-    .imgSection{
-        .spaImg{
-            width: 370px;
-        }
-    }
-    .seguinosContainer img{
-        width: 22px;
-        .seguinos{
-            font-size: 12px;
-        }
-    }
-
-
-
-}
-
 @media (max-width: 576px) and (min-width: 390px){
+    body{
+        header{
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            align-items: center;
+            p{
+                font-size: $smallTitle;
+                display: flex;
+            }
+            nav{
+                ul{
+                    li{
+                        font-size: $smallSub;
+                        a{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        main{
+            h1{
+                font-size: $mediumSize;
+            }
+            // index
+            .indexImg{
+                margin-top: 50px;
+            }
+            .indexText{
+                margin: 30px;
+                font-size: $smallTitle;
+            }
+            // Servicios
+            .nservicios{
+                img{
+                    width: 320px;
+                }
+            }
+            .serviciosSection{
+                .packImg{
+                    flex-wrap: wrap;
+                    img{
+                        padding-right: 0px;
+                        padding-bottom: 60px;
+                        height: 243px;
+                        width: 275px;
+                    }
+                }
+                h4{
+                    font-size: $smallTitle;
+                }
+                div{
+                    font-size: $smallSub;
+                    width: 260px;
+                    ul{
+                        margin: 19px;
+                        font-size: $smallSub;
+                    }
+                }
+            }
+            // Ubicacion
+            .ubicacion{
+                div{
+                    width: 200px;
+                }
+            }
+            .direc{
+                font-size: $smallSub;
+            }
+            // Contacto
+            .contactSection{
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 170px;
+                div{
+                    p{
+                        font-size: $smallTitle;
+
+                    }
+                }
+            }
+            // Imagenes
+            .imgSection{
+                h2{
+                    font-size: $smallTitle;
+                } 
+                .spaImg{
+                    width: 300px;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                }
+            }
+
+        }
+        footer{
+            .seguinosContainer{
+                img{
+                    width: 22px;
+                }
+                p{
+                    font-size: $smallSize;
+                }
+            }
+        }
+    }
+}
+
+    
+@media (max-width: 768px) and (min-width: 576px){
+    body{
+        header{
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            align-items: center;
+            p{
+                font-size: $smallTitle;
+                display: flex;
+            }
+            nav{
+                ul{
+                    li{
+                        font-size: $smallTitle;
+                        a{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        main{
+            h1{
+                font-size: $mediumTitle;
+            }
+            // index
+            .indexImg{
+                margin-top: 50px;
+                width: 540px;
+            }
+            .indexText{
+                margin: 30px;
+                font-size: $mediumSize;
+            }
+            // Servicios
+            .nservicios{
+                img{
+                    width: 430px;
+                }
+            }
+            .serviciosSection{
+                .packImg{
+                    flex-wrap: wrap;
+                    img{
+                        padding-right: 0px;
+                        padding-bottom: 60px;
+                        height: 243px;
+                        width: 275px;
+                    }
+                }
+                h4{
+                    font-size: $mediumSub;
+                }
+                div{
+                    width: 380px;
+                    ul{
+                        margin: 28px;
+                        font-size: $mediumSize
+                    }
+                }
+            }
+            // Ubicacion
+            .ubicacion{
+                div{
+                    width: 380px;
+                }
+            }
+            .direc{
+                font-size: $mediumSize;
+            }
+            // Contacto
+            .contactSection{
+                margin-top: 80px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 170px;
+                div{
+                    p{
+                        font-size: $mediumSize;
+
+                    }
+                }
+            }
+            // Imagenes
+            .imgSection{
+                h2{
+                    font-size: $mediumSub;
+                } 
+                .spaImg{
+                    width: 300px;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                }
+            }
+
+        }
+        footer{
+            .seguinosContainer{
+                img{
+                    width: 22px;
+                }
+                p{
+                    font-size: $smallTitle;
+                }
+            }
+        }
+    }
+
+}   
+
+@media(min-width: 768px) and (max-width: 1230px){
+    body{
+        header{
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            align-items: center;
+            p{
+                font-size: $smallTitle;
+                display: flex;
+            }
+            nav{
+                ul{
+                    li{
+                        font-size: $smallTitle;
+                        a{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        main{
+            h1{
+                font-size: $bigSize;
+            }
+            // index
+            .indexImg{
+                margin-top: 50px;
+                width: 540px;
+            }
+            .indexText{
+                margin: 30px;
+                font-size: $mediumSize;
+            }
+            // Servicios
+            .nservicios{
+                img{
+                    width: 430px;
+                }
+            }
+            .serviciosSection{
+                .packImg{
+                    gap: 18px;
+                    img{
+                        padding-right: 0px;
+                        padding-bottom: 60px;
+                        height: 213px;
+                        width: 223px;
+                    }
+                }
+                h4{
+                    font-size: $mediumSub;
+                }
+                div{
+                    width: 490px;
+                    ul{
+                        margin: 28px;
+                        font-size: $mediumSize
+                    }
+                }
+            }
+            // Ubicacion
+            .ubicacion{
+                div{
+                    width: 490px;
+                }
+            }
+            .direc{
+                font-size: $mediumSize;
+            }
+            // Contacto
+            .contactSection{
+                div{
+                    p{
+                        font-size: $mediumSize;
+
+                    }
+                }
+            }
+            // Imagenes
+            .imgSection{
+                h2{
+                    font-size: $mediumSub;
+                } 
+                .spaImg{
+                    width: 700px;
+                    justify-content: center;
+                    gap: 20px;
+                    img{
+                        height: 147px;
+                        width: 217px;
+                    }
+                    .picSpa{
+                        height: 147px;
+                        width: 217px;
+                    }
+                }
+            }
+
+        }
+        footer{
+            .seguinosContainer{
+                img{
+                    width: 22px;
+                }
+                p{
+                    font-size: $smallTitle;
+                    margin: 0%;
+                }
+            }
+        }
+    }
 
 }
 
-@media (max-width: 768px) and (min-width: 576px){
-    h1{
-        font-size: 35px;
-    }
-    .indexImg{
-        width: 490px;
-        height: 331px;
-    }
-    .indexText{
-        margin: 35px;
-        font-size: 20px;
-    }
-
-    .seguinosContainer{
-        img{
-        width: 25px;
-        }
-        .seguinos{
-            font-size: 14px;
+@media(min-width: 1230px){
+    body{
+        main{
+            .indexImg{
+                width: 760px;
+            }
         }
     }
-    .packs{
-        margin: 54px;
-        font-size: 17px;
-    }
-    .packImg{
-        display: grid;
-    }
-    .packImg img{
-        padding-right: 0px;
-        padding-bottom: 60px;
-        height: 278px;
-        width: 341px;
-    }
-
-} 
+}

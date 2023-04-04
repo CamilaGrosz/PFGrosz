@@ -1,102 +1,3 @@
-@media (max-width: 390px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
-    align-items: center;
-  }
-  header p {
-    font-size: 12px;
-    display: flex;
-  }
-  header nav ul li {
-    font-size: 10px;
-  }
-  header nav ul li a {
-    margin-left: 10px;
-  }
-  main h1 {
-    font-size: 10px;
-  }
-  main .indexText {
-    margin: 30px;
-    font-size: 10px;
-  }
-  .nservicios img {
-    height: 258px;
-  }
-  .packs {
-    margin: 40px;
-    font-size: 16px;
-  }
-  .packImg {
-    flex-wrap: wrap;
-  }
-  .packImg img {
-    padding-right: 0px;
-    padding-bottom: 60px;
-    height: 243px;
-    width: 275px;
-  }
-  .ubiTitle {
-    padding: 0px;
-  }
-  .map {
-    margin: 40px;
-  }
-  .direc {
-    font-size: 15px;
-    padding: 20px;
-    padding-bottom: 50px;
-  }
-  .contactRow {
-    padding: 23px;
-  }
-  .col p {
-    font-size: 14px;
-  }
-  .imgSection .spaImg {
-    width: 370px;
-  }
-  .seguinosContainer img {
-    width: 22px;
-  }
-  .seguinosContainer img .seguinos {
-    font-size: 12px;
-  }
-}
-@media (max-width: 768px) and (min-width: 576px) {
-  h1 {
-    font-size: 35px;
-  }
-  .indexImg {
-    width: 490px;
-    height: 331px;
-  }
-  .indexText {
-    margin: 35px;
-    font-size: 20px;
-  }
-  .seguinosContainer img {
-    width: 25px;
-  }
-  .seguinosContainer .seguinos {
-    font-size: 14px;
-  }
-  .packs {
-    margin: 54px;
-    font-size: 17px;
-  }
-  .packImg {
-    display: grid;
-  }
-  .packImg img {
-    padding-right: 0px;
-    padding-bottom: 60px;
-    height: 278px;
-    width: 341px;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -135,14 +36,13 @@ body header nav ul li a {
   margin-top: 50px;
 }
 body header nav ul li :hover {
-  text-decoration: none;
   color: #666666;
   font-weight: bolder;
 }
 body main h1 {
   color: #606060;
   font-weight: bolder;
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
   padding-top: 30px;
 }
@@ -151,13 +51,12 @@ body main .indexImg {
   margin-left: auto;
   margin-right: auto;
   margin-top: 35px;
-  width: 680px;
-  height: 416px;
+  width: 300px;
 }
 body main .indexText {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 19px;
   text-align: center;
 }
 body main .nservicios img {
@@ -170,27 +69,45 @@ body main .serviciosSection h4 {
   display: flex;
   justify-content: center;
   margin-top: 100px;
-  font-size: 20px;
+  font-size: 21px;
 }
 body main .serviciosSection div {
   display: flex;
   font-size: 18px;
   justify-content: center;
   margin-top: 50px;
+  border: 1px solid rgba(96, 96, 96, 0.3058823529);
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body main .serviciosSection div ul {
+  margin: 60px;
+  font-size: 19px;
+}
+body main .serviciosSection div ul .servicios-li {
+  display: inline;
 }
 body main .serviciosSection .packImg {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-bottom: 70px;
+  border: none;
 }
 body main .serviciosSection .packImg img {
   padding-right: 20px;
   height: 159px;
 }
+body main .serviciosSection .packImg .picSpa {
+  height: 159px;
+  width: 264px;
+}
 body main .ubicacion div {
   display: flex;
   justify-content: center;
   margin-top: 86px;
+  margin-left: auto;
+  margin-right: auto;
 }
 body main .direc {
   padding-left: 13px;
@@ -198,13 +115,13 @@ body main .direc {
   padding-top: 30px;
   padding-bottom: 52px;
 }
-body main .contactTitle {
-  margin-bottom: 147px;
+body main .contactSection {
+  margin-top: 200px;
 }
 body main .contactSection div {
   display: flex;
   justify-content: center;
-  margin-bottom: 45px;
+  margin-bottom: 60px;
 }
 body main .contactSection .ig {
   width: 23px;
@@ -212,13 +129,10 @@ body main .contactSection .ig {
   margin-right: 20px;
 }
 body main .contactSection .face {
-  width: 26px;
-  height: 27px;
+  width: 23px;
+  height: 24px;
   display: inline;
   margin-right: 14px;
-}
-body main .imgSection {
-  padding-left: 25px;
 }
 body main .imgSection .spaImg {
   width: 1200px;
@@ -227,6 +141,10 @@ body main .imgSection .spaImg {
   margin: 0 auto;
   padding-bottom: 50px;
 }
+body main .imgSection .spaImg .picSpa {
+  height: 208px;
+  width: 320px;
+}
 body main .imgSection .tratamientos {
   margin-bottom: 30px;
 }
@@ -234,19 +152,24 @@ body main .imgSection h2 {
   padding-top: 50px;
   color: #606060;
   padding-bottom: 24px;
-  padding-right: 30px;
   text-align: center;
+  font-size: 21px;
+}
+body main hr {
+  margin: 0px;
 }
 body footer {
   display: flex;
   height: 50px;
   margin-top: auto;
   justify-content: flex-end;
+  border-top: 1px solid rgba(96, 96, 96, 0.3058823529);
 }
 body footer .seguinosContainer {
   display: flex;
   gap: 20px;
   margin: 20px;
+  align-items: center;
 }
 body footer .seguinosContainer p {
   font-weight: bolder;
@@ -257,6 +180,344 @@ body footer .seguinosContainer img {
   width: 29px;
   margin-right: 7px;
   height: fit-content;
+}
+
+@media (max-width: 390px) {
+  body header {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+  }
+  body header p {
+    font-size: 10px;
+    display: flex;
+  }
+  body header nav ul li {
+    font-size: 10px;
+  }
+  body header nav ul li a {
+    margin-left: 10px;
+  }
+  body main h1 {
+    font-size: 14px;
+  }
+  body main .indexImg {
+    margin-top: 50px;
+  }
+  body main .indexText {
+    margin: 30px;
+    font-size: 10px;
+  }
+  body main .nservicios img {
+    height: 200px;
+  }
+  body main .packImg {
+    flex-wrap: wrap;
+  }
+  body main .packImg img {
+    padding-right: 0px;
+    padding-bottom: 60px;
+    height: 243px;
+    width: 275px;
+  }
+  body main .serviciosSection h4 {
+    font-size: 12px;
+  }
+  body main .serviciosSection div {
+    font-size: 10px;
+    width: 260px;
+  }
+  body main .serviciosSection div ul {
+    margin: 19px;
+    font-size: 10px;
+  }
+  body main .serviciosSection .packImg img {
+    width: 200px;
+  }
+  body main .serviciosSection .packImg .picSpa {
+    width: 200px;
+  }
+  body main .ubicacion div {
+    width: 200px;
+  }
+  body main .direc {
+    font-size: 10px;
+  }
+  body main .contactSection {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+  }
+  body main .contactSection div p {
+    font-size: 10px;
+  }
+  body main .imgSection h2 {
+    font-size: 12px;
+  }
+  body main .imgSection .spaImg {
+    width: 300px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  body footer .seguinosContainer img {
+    width: 22px;
+  }
+  body footer .seguinosContainer p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 576px) and (min-width: 390px) {
+  body header {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+  }
+  body header p {
+    font-size: 14px;
+    display: flex;
+  }
+  body header nav ul li {
+    font-size: 12px;
+  }
+  body header nav ul li a {
+    margin-left: 10px;
+  }
+  body main h1 {
+    font-size: 19px;
+  }
+  body main .indexImg {
+    margin-top: 50px;
+  }
+  body main .indexText {
+    margin: 30px;
+    font-size: 14px;
+  }
+  body main .nservicios img {
+    width: 320px;
+  }
+  body main .serviciosSection .packImg {
+    flex-wrap: wrap;
+  }
+  body main .serviciosSection .packImg img {
+    padding-right: 0px;
+    padding-bottom: 60px;
+    height: 243px;
+    width: 275px;
+  }
+  body main .serviciosSection h4 {
+    font-size: 14px;
+  }
+  body main .serviciosSection div {
+    font-size: 12px;
+    width: 260px;
+  }
+  body main .serviciosSection div ul {
+    margin: 19px;
+    font-size: 12px;
+  }
+  body main .ubicacion div {
+    width: 200px;
+  }
+  body main .direc {
+    font-size: 12px;
+  }
+  body main .contactSection {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+  }
+  body main .contactSection div p {
+    font-size: 14px;
+  }
+  body main .imgSection h2 {
+    font-size: 14px;
+  }
+  body main .imgSection .spaImg {
+    width: 300px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  body footer .seguinosContainer img {
+    width: 22px;
+  }
+  body footer .seguinosContainer p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  body header {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+  }
+  body header p {
+    font-size: 14px;
+    display: flex;
+  }
+  body header nav ul li {
+    font-size: 14px;
+  }
+  body header nav ul li a {
+    margin-left: 10px;
+  }
+  body main h1 {
+    font-size: 25px;
+  }
+  body main .indexImg {
+    margin-top: 50px;
+    width: 540px;
+  }
+  body main .indexText {
+    margin: 30px;
+    font-size: 19px;
+  }
+  body main .nservicios img {
+    width: 430px;
+  }
+  body main .serviciosSection .packImg {
+    flex-wrap: wrap;
+  }
+  body main .serviciosSection .packImg img {
+    padding-right: 0px;
+    padding-bottom: 60px;
+    height: 243px;
+    width: 275px;
+  }
+  body main .serviciosSection h4 {
+    font-size: 21px;
+  }
+  body main .serviciosSection div {
+    width: 380px;
+  }
+  body main .serviciosSection div ul {
+    margin: 28px;
+    font-size: 19px;
+  }
+  body main .ubicacion div {
+    width: 380px;
+  }
+  body main .direc {
+    font-size: 19px;
+  }
+  body main .contactSection {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+  }
+  body main .contactSection div p {
+    font-size: 19px;
+  }
+  body main .imgSection h2 {
+    font-size: 21px;
+  }
+  body main .imgSection .spaImg {
+    width: 300px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  body footer .seguinosContainer img {
+    width: 22px;
+  }
+  body footer .seguinosContainer p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1230px) {
+  body header {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+  }
+  body header p {
+    font-size: 14px;
+    display: flex;
+  }
+  body header nav ul li {
+    font-size: 14px;
+  }
+  body header nav ul li a {
+    margin-left: 10px;
+  }
+  body main h1 {
+    font-size: 30px;
+  }
+  body main .indexImg {
+    margin-top: 50px;
+    width: 540px;
+  }
+  body main .indexText {
+    margin: 30px;
+    font-size: 19px;
+  }
+  body main .nservicios img {
+    width: 430px;
+  }
+  body main .serviciosSection .packImg {
+    gap: 18px;
+  }
+  body main .serviciosSection .packImg img {
+    padding-right: 0px;
+    padding-bottom: 60px;
+    height: 213px;
+    width: 223px;
+  }
+  body main .serviciosSection h4 {
+    font-size: 21px;
+  }
+  body main .serviciosSection div {
+    width: 490px;
+  }
+  body main .serviciosSection div ul {
+    margin: 28px;
+    font-size: 19px;
+  }
+  body main .ubicacion div {
+    width: 490px;
+  }
+  body main .direc {
+    font-size: 19px;
+  }
+  body main .contactSection div p {
+    font-size: 19px;
+  }
+  body main .imgSection h2 {
+    font-size: 21px;
+  }
+  body main .imgSection .spaImg {
+    width: 700px;
+    justify-content: center;
+    gap: 20px;
+  }
+  body main .imgSection .spaImg img {
+    height: 147px;
+    width: 217px;
+  }
+  body main .imgSection .spaImg .picSpa {
+    height: 147px;
+    width: 217px;
+  }
+  body footer .seguinosContainer img {
+    width: 22px;
+  }
+  body footer .seguinosContainer p {
+    font-size: 14px;
+    margin: 0%;
+  }
+}
+@media (min-width: 1230px) {
+  body main .indexImg {
+    width: 760px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
