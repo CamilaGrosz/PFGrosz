@@ -34,10 +34,12 @@ body header nav ul li a {
   margin-left: 38px;
   color: #606060;
   margin-top: 50px;
+  transition: color 1s, font-weight 1s, font-size 1s;
 }
 body header nav ul li :hover {
-  color: #666666;
+  color: #252323;
   font-weight: bolder;
+  font-size: 19px;
 }
 body main h1 {
   color: #606060;

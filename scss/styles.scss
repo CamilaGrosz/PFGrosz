@@ -31,12 +31,14 @@ body{
                         margin-left: 38px;
                         color: #606060;
                         margin-top: 50px;
+                        transition: color 1s, font-weight 1s, font-size 1s;
                     }
-                    
                     & :hover{
-                        color: #666666;
+                        color: #252323;
                         font-weight: bolder;
+                        font-size: $mediumSize;
                     }
+                  
                 }
             }
         }
